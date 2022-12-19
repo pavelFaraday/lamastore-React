@@ -36,7 +36,7 @@ const Categories = () => {
 						alt=""
 					/>
 					<button>
-						<Link className="link" to="./products/3">
+						<Link className="link" to="./products/">
 							NEW SEASON
 						</Link>
 					</button>

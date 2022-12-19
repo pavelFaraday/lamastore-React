@@ -38,6 +38,22 @@ const FeaturedProducts = ({ type }) => {
 			oldPrice: 19,
 			price: 12,
 		},
+		{
+			id: 5,
+			img: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&w=1600",
+			img2: "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			title: "Skirt",
+			oldPrice: 19,
+			price: 12,
+		},
+		{
+			id: 6,
+			img: "https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg?auto=compress&cs=tinysrgb&w=1600",
+			img2: "https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			title: "Hat",
+			oldPrice: 19,
+			price: 12,
+		},
 	];
 
 	return (
