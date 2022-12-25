@@ -9,8 +9,9 @@ const FeaturedProducts = ({ type }) => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const data = await axios.get(
-					process.env.REACT_APP_API_URL + "/products",
+				const res = await axios.get(
+					process.env.REACT_APP_API_URL +
+						`/products?populate=*&[filters][type][$eq]=${type}`,
 					{
 						headers: {
 							Authorization:
@@ -18,7 +19,8 @@ const FeaturedProducts = ({ type }) => {
 						},
 					}
 				);
-				console.log(data);
+				setData(res.data.data);
+				console.log(res);
 			} catch (err) {
 				console.log(err);
 			}
